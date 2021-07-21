@@ -1,0 +1,54 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "k8sdemo"
+        },
+        "location": {
+            "value": "centralindia"
+        },
+        "dnsPrefix": {
+            "value": "k8sdemo-dns"
+        },
+        "kubernetesVersion": {
+            "value": "1.19.11"
+        },
+        "networkPlugin": {
+            "value": "kubenet"
+        },
+        "enableRBAC": {
+            "value": true
+        },
+        "enablePrivateCluster": {
+            "value": false
+        },
+        "enableHttpApplicationRouting": {
+            "value": false
+        },
+        "enableAzurePolicy": {
+            "value": false
+        },
+        "vmssNodePool": {
+            "value": true
+        },
+        "workspaceName": {
+            "value": "DefaultWorkspace-ed7969de-5fc8-4527-9d5f-47b658eed45b-EUS"
+        },
+        "omsWorkspaceId": {
+            "value": "/subscriptions/ed7969de-5fc8-4527-9d5f-47b658eed45b/resourcegroups/defaultresourcegroup-eus/providers/microsoft.operationalinsights/workspaces/defaultworkspace-ed7969de-5fc8-4527-9d5f-47b658eed45b-eus"
+        },
+        "workspaceRegion": {
+            "value": "eastus"
+        },
+        "networkPolicy": {
+            "value": "calico"
+        },
+        "acrName": {
+            "value": "azreg1"
+        },
+        "acrResourceGroup": {
+            "value": "DefaultResourceGroup-EUS"
+        }
+    }
+}
